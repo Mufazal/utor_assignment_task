@@ -73,8 +73,7 @@ abstract class PsApi {
       Map<dynamic, dynamic> jsonMap,
       Map<String, String>? header) async {
     final Client client = http.Client();
-    log(url);
-    print(jsonMap);
+
     try {
       final Response response = await client
           .post(Uri.parse(url),
@@ -86,8 +85,7 @@ abstract class PsApi {
           .catchError((dynamic e) {
         return PsResource<R>(PsStatus.ERROR, 'Server connection Error!', null);
       });
-      log(response.statusCode.toString());
-      log("Server Response ==========${response.body}");
+
       final PsApiResponse psApiResponse = PsApiResponse(response);
       if (psApiResponse.isSuccessful()) {
         final dynamic hashMap = json.decode(psApiResponse.body!);

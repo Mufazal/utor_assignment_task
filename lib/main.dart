@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         debugShowMaterialGrid: false,
         routes: routes,
-        home: const MovieListScreen(),
+        home: MovieListScreen(),
       ),
     );
   }

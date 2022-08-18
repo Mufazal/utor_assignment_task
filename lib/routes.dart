@@ -10,8 +10,8 @@ final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
 BuildContext? myContext = navigatorKey.currentState!.context;
 
 final Map<String, Widget Function(BuildContext)> routes = {
-  Screens.movieListScreen: (ctx) => const MovieListScreen(),
-  Screens.movieDetalScreen: (ctx) => const MovieDetailScreen(),
+  Screens.movieListScreen: (ctx) => MovieListScreen(),
+  Screens.movieDetalScreen: (ctx) => MovieDetailScreen(),
 };
 
 final List<ChangeNotifierProvider<dynamic>> multiProviders = [

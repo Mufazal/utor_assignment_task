@@ -40,7 +40,8 @@ dependencies:
   provider:
   flutter_screenutil: ^5.1.0
   flutter_spinkit:
-  fluttertoast:  
+  fluttertoast:
+  staggered_grid_view_flutter:   
 
 dev_dependencies:
   flutter_test:
